@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MonkeyFinder.Model"
+             xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
+             x:DataType="viewmodel:MonkeysViewModel"
+             Title="{Binding Title}"
              x:Class="MonkeyFinder.View.MainPage">
 
     <CollectionView>
@@ -29,19 +32,17 @@
         </CollectionView.ItemsSource>
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="model:Monkey">
-                <HorizontalStackLayout Padding="10">
+                <HorizontalStackLayout Padding="10" Spacing="20">
                     <Image Source="{Binding Image}"
                            HeightRequest="100"
                            WidthRequest="100"
                            Aspect="AspectFill"
-                           >
-                            
-                    </Image>
-                    <VerticalStackLayout Padding="10" Spacing="5" VerticalOptions="Start">
+                           />
+                    <VerticalStackLayout Spacing="6">
                         <Label Text="{Binding Name}" FontSize="24" TextColor="DarkSlateGray"/>
-                        <Label Text="{Binding Location}" FontSize="10" />
-
+                        <Label Text="{Binding Location}" FontSize="10" FontAttributes="Italic" />
                     </VerticalStackLayout>
+
                 </HorizontalStackLayout>
             </DataTemplate>
         </CollectionView.ItemTemplate>
