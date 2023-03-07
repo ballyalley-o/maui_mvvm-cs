@@ -5,9 +5,9 @@
              x:Class="MonkeyFinder.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#FFC107</Color>
-            <Color x:Key="PrimaryDark">#FFA000</Color>
-            <Color x:Key="Accent">#00BCD4</Color>
+            <Color x:Key="Primary">#197BBD</Color>
+            <Color x:Key="PrimaryDark">#204B57</Color>
+            <Color x:Key="Accent">#8A716A</Color>
 
             <Color x:Key="LightBackground">#FAF9F8</Color>
             <Color x:Key="DarkBackground">Black</Color>
@@ -24,7 +24,7 @@
 			</Style>
 
             <Style TargetType="Label" x:Key="BaseLabel">
-                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontFamily" Value="Cooper Black" />
                 <Setter Property="TextColor" Value="#1F1F1F" />
             </Style>
 

@@ -1,6 +1,4 @@
-﻿using Java.Security;
-
-namespace MonkeyFinder.ViewModel;
+﻿namespace MonkeyFinder.ViewModel;
 
 
 public partial class BaseViewModel : ObservableObject

@@ -27,8 +27,6 @@ public class MonkeyService
             monkeyList = await response.Content.ReadFromJsonAsync<List<Monkey>>();
         }
 
-
-
         return monkeyList;
     }
 }
